@@ -1,0 +1,54 @@
+/* ASSETS
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+/* ======================
+Level 2_1
+========================= */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 auto;
+    width: fit-content;
+    gap: 10px;
+}
+
+.galleryImg {
+    position: relative;
+    display: flex;
+}
+
+.galleryImg div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 0%;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galleryImg:hover>div {
+    height: 100%;
+    visibility: visible;
+    background-color: #00000033;
+    transition: 0.5s all;
+    color: #fff;
+    text-align: center;
+}
