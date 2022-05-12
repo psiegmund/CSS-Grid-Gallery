@@ -34,6 +34,7 @@ Level 2_1
 
 .galleryImg div {
     position: absolute;
+    color: #fff;
     bottom: 0;
     right: 0;
     width: 100%;
@@ -42,6 +43,7 @@ Level 2_1
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.5s all;
 }
 
 .galleryImg:hover>div {
